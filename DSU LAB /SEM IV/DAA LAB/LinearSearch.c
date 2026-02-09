@@ -1,5 +1,5 @@
 #include <stdio.h>
-void linearSearch(int arr[], int size, int target, int result[], int *resultSize) {
+void LinearSearch(int arr[], int size, int target, int result[], int *resultSize) {
     *resultSize = 0;
     for (int i = 0; i < size; i++) {
         if (arr[i] == target) {
@@ -22,7 +22,7 @@ printf("Enter the size of the array: ");
     scanf("%d", &target);
     int result[size];
     int resultSize;
-    linearSearch(arr, size, target, result, &resultSize);
+    LinearSearch(arr, size, target, result, &resultSize);
     if (resultSize > 0) {
         printf("Matching indices for target %d: ", target);
         for (int i = 0; i < resultSize; i++) {
